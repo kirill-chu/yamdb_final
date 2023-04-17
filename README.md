@@ -1,4 +1,4 @@
-[![yamdb workflow](https://github.com/kirill-chu/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=main)](https://github.com/kirill-chu/yamdb_final/actions/workflows/yamdb_workflow.yml)
+[![yamdb workflow](https://github.com/kirill-chu/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)](https://github.com/kirill-chu/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
 # api_yamdb
 
