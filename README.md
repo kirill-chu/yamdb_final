@@ -82,8 +82,8 @@ cat  fixtures.json | docker-compose exec -T web python manage.py loaddata --form
 ```
 
 ### Deploy при помощи git actions
-Форкните проект.
-Подготовьте сервер для деплоя.
+- Форкните проект.
+- Подготовьте сервер для деплоя.
 Установить на него docker.io и docker compose официальная документация доступна здесь: https://docs.docker.com/compose/install/
 Скопируйте все данные из `infra` в `home/<ваш_username>/` на подготовленном сервере.
 Создайте необходимые secrets в проекте, которые встречаются в `yamdb_workflow.yml`.
