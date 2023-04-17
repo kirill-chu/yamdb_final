@@ -1,7 +1,7 @@
 name: yamdb workflow
 
 on: push
-  branches: [ master ]
+branches: [ master ]
 
 jobs:
   tests:
