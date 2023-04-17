@@ -6,20 +6,20 @@ from django.core.mail import send_mail
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import (
-    filters, generics, mixins, permissions, status, viewsets,)
+from rest_framework import (filters, generics, mixins, permissions, status,
+                            viewsets)
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
+from reviews.models import Category, Genre, Review, Title
 
 from .filters import TitleFilter
-from .permissions import (
-    IsAdmin, IsAdminOrReadOnly, IsOwnerAdminModeratorOrReadOnly,)
-from .serializers import (
-    CategorySerializer, CommentSerializer, CreateUpdateTitleSerializer,
-    GenreSerializer, MeSerializer, NewTokenSerializer, ReviewSerializer,
-    SignUpSerializer, TitleSerializer, UserSerializer,)
-from reviews.models import Category, Genre, Review, Title
+from .permissions import (IsAdmin, IsAdminOrReadOnly,
+                          IsOwnerAdminModeratorOrReadOnly)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          CreateUpdateTitleSerializer, GenreSerializer,
+                          MeSerializer, NewTokenSerializer, ReviewSerializer,
+                          SignUpSerializer, TitleSerializer, UserSerializer)
 
 User = get_user_model()
 

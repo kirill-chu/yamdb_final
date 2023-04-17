@@ -4,8 +4,8 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
 from rest_framework.validators import UniqueTogetherValidator, UniqueValidator
-
 from reviews.models import Category, Comment, Genre, Review, Title
+
 from .validators import regexp_validator
 
 User = get_user_model()
