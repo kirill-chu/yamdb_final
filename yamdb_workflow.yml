@@ -1,8 +1,7 @@
 name: yamdb workflow
 
 on: push
-  branches: 
-  - '*'
+  branches: [ '*' ]
 
 jobs:
   tests:
